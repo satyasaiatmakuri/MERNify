@@ -46,7 +46,7 @@ exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
 });
 
 exports.getProducts = catchAsyncErrors(async (req, res, next) => {
-  const resPerPage = 4;
+  const resPerPage = 8;
 
   const productsCount = await Product.countDocuments();
 
